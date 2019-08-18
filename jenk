@@ -1,0 +1,9 @@
+node {
+    stage("checkout"){
+        git   "https://github.com/naorsms/work-with-jenkins.git"
+    }
+
+    stage("run t.py"){
+        bat "python t.py"
+    }
+}
